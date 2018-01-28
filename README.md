@@ -1,18 +1,34 @@
-# vue-cli
+Данный проект потробно знакомит с **Vuex** - компонентой фрэймворка Vue js. 
+Vuex используется как **единое хранилище данных** в приложении.
+Основные понятия:
+1. store;
+2. getters;
+3. nutations;
+4. actions;
+5. types;
+6. modules;
 
-> A Vue.js project
 
-## Build Setup
+## Установка (1 раз):
 
 ``` bash
-# install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
+```
+## Запуск (каждый раз) на localhost:8080
+```
 npm run dev
-
-# build for production with minification
+```
+#### production:
+```
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#### Чтобы убить процесс на порту 8080 (Windows):
+```
+1. netstat -ano | findstr 8080
+2. taskkill /pid @НОМЕР_ПОРТА@ /F
+``` 
+> Доп. зависимость:
+``` 
+ npm install --save-dev babel-preset-stage-2
+``` 
